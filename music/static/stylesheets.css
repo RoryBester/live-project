@@ -1,0 +1,225 @@
+/*=======================================================
+  NAV BAR
+=========================================================*/
+.navbar-brand {
+    padding-left: 2%;
+}
+
+/*=======================================================
+  CAROUSEL
+=========================================================*/
+@media screen and (max-width: 414px) {}
+    .carousel .carousel-item {
+        height: 550px !important;
+    }
+    .carousel-item img {
+        position: absolute;
+        object-fit:cover;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+  
+/*=========================================================
+  TABLE STYLES
+==========================================================*/
+@media screen and (max-width: 414px) {   
+    #About, .row {
+        background-color: #e0e0e0;    
+        background-attachment: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: auto;
+        height:auto;
+        display: block;
+        height: auto;
+        padding-top: 50px; /* This is the spacer before the main title logo */
+        padding-bottom: 50px; /* This is the spacer after the main title logo */ 
+        justify-content: center !important;
+
+    } 
+} 
+
+h1, h3 {
+    text-align: center;
+}
+
+* { box-sizing: border-box; /* This creates a box with a border */
+} 
+
+.Column_1 {
+    float: left;
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px; /* This ensures there is space between the top of the column and our headings */
+    height: 500px; /* This sets the height of the column to 400px */
+    background-color: #e0e0e0; /* Sets the background color of the columns with class Column_1 */
+    text-align: center;
+}
+
+/* Screens 414px and smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 414px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+.Column_2 {
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-color: #e0e0e0;
+ }
+
+
+/* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 500px;
+}
+
+/* This inserts something after the content of selected elements (in this case the elements with class "Row") */
+.Row:after {
+	content: ""; 
+	display: table; 
+	clear: both;
+}
+
+img {
+    width:100%;
+    height:100%;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+/*========================================================
+  CONTACT FORM
+==========================================================*/
+@media screen and (max-width: 414px) { 
+    #get-in-touch {
+        margin:20%;
+    } 
+}
+
+
+    
+    #get-in-touch {
+        max-width: 800px;
+        margin: 50px auto;
+        position: relative;  
+    }
+
+    #get-in-touch .title {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 3.2em;
+        line-height: 48px;
+        padding-bottom: 48px;
+        color: #8f8f8f;
+        background-color:#8f8f8f;
+        background: -moz-linear-gradient(left,#fbfbfb  0%,#959595 100%) !important;
+        background: -webkit-linear-gradient(left,#fbfbfb   0%,#959595 100%) !important;
+        background: linear-gradient(to right,#fbfbfb   0%,#959595  100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+    
+    .contact-form .form-field {
+        position: relative;
+        margin: 32px 0;
+    }
+    .contact-form .input-text {
+        display: block;
+        width: 100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        border-color: #959595;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    .contact-form .input-text:focus {
+        outline: none;
+    }
+    .contact-form .input-text:focus + .label,
+    .contact-form .input-text.not-empty + .label {
+        -webkit-transform: translateY(-24px);
+                transform: translateY(-24px);
+    }
+    .contact-form .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #959595;
+        cursor: text;
+        transition: -webkit-transform .2s ease-in-out;
+        transition: transform .2s ease-in-out;
+        transition: transform .2s ease-in-out, 
+        -webkit-transform .2s ease-in-out;
+    }
+    .contact-form .submit-btn {
+        display: inline-block;
+        background-color: #000;
+        background-image: linear-gradient(125deg,#fbfbfb,#959595);
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 8px 16px;
+        border: none;
+        width:200px;
+        cursor: pointer;
+    }
+
+    
+/*========================================================
+  FOOTER STYLES
+==========================================================*/
+
+
+.terms {
+    margin: 30px 1px 0 0 ;
+    margin-top: 8%;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #8f8f8f;
+    cursor: pointer #fbfbfb;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    width: auto;
+    position: relative;
+    display: inline;
+    float: right;
+    
+}
+.submit-btn:hover {
+    color: #959595;
+}
+.terms:hover {
+    color: #959595;
+    text-decoration: underline;
+}
+
+/*=====================================================  
+  SCROLL TO TOP BUTTON
+=======================================================*/
+
+.back2top {
+    background-color: #8f8f8f;
+    border: 1px solid ;
+    border-radius: 1px;
+    color: rgb(80, 62, 62);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+}
